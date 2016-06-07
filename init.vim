@@ -1,0 +1,133 @@
+set nocompatible
+
+" ----------------------------------------------------------------------------
+" Load plugins
+" ----------------------------------------------------------------------------
+source ~/.config/nvim/dependencies.vim
+
+" ----------------------------------------------------------------------------
+" Base config
+" ----------------------------------------------------------------------------
+filetype plugin indent on
+syntax on
+
+set number
+set ruler
+set encoding=utf-8
+set hidden
+set mouse=a
+
+" Tab character settings
+set wrap
+set scrolloff=3
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+" set list listchars=tab:\ \ ,trail:·
+
+" Searching
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+
+" allow backspacing over everything in insert mode
+set backspace=indent,eol,start
+
+" History settings
+" Store lots of :cmdline history
+set history=1000
+" Store marks on up to 100 files
+set viminfo='100,f1
+
+" load the plugin and indent settings for the detected filetype
+filetype plugin indent on
+
+" Tab (:e .. ) completion
+set browsedir=buffer                  " browse files in same dir as open file
+set wildmenu                          " Enhanced command line completion.
+set wildmode=list:longest,full        " Complete files using a menu AND list
+set wildignorecase
+" ignore outputs, VCS
+set wildignore+=.git,.hg,.svn
+set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*,*.gem
+set wildignore+=*.aux,*.out,*.toc
+set wildignore+=*.o,*.obj,*.exe,*.dll,*.manifest,*.rbc,*.class
+set wildignore+=*.ai,*.bmp,*.gif,*.ico,*.jpg,*.jpeg,*.png,*.psd,*.webp
+set wildignore+=*.avi,*.m4a,*.mp3,*.oga,*.ogg,*.wav,*.webm
+set wildignore+=*.eot,*.otf,*.ttf,*.woff
+set wildignore+=*.doc,*.pdf
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+set wildignore+=*.swp,.lock,.DS_Store,._*
+
+" Remember last location in file
+au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+      \| exe "normal g'\"" | endif
+
+
+" Define backup directory
+set backupdir=~/.nvim/swap,/tmp,.
+set directory=~/.nvim/swap,/tmp,.
+
+" ban arrows movements
+"map <up> <nop>
+"map <down> <nop>
+"map <left> <nop>
+"map <right> <nop>
+"imap <up> <nop>
+"imap <down> <nop>
+"imap <left> <nop>
+"imap <right> <nop>
+
+" ----------------------------------------------------------------------------
+" Leader
+" ----------------------------------------------------------------------------
+let mapleader="\<SPACE>"
+nnoremap <Space> <nop>
+
+" ----------------------------------------------------------------------------
+" Removes trailing spaces Leader
+" ----------------------------------------------------------------------------
+
+function! TrimWhiteSpace()
+    %s/\s\+$//e
+endfunction
+
+autocmd FileWritePre    * :call TrimWhiteSpace()
+autocmd FileAppendPre   * :call TrimWhiteSpace()
+autocmd FilterWritePre  * :call TrimWhiteSpace()
+autocmd BufWritePre     * :call TrimWhiteSpace()
+
+
+source ~/.config/nvim/ruby.vim
+source ~/.config/nvim/make.vim
+source ~/.config/nvim/python.vim
+source ~/.config/nvim/go.vim
+
+source ~/.config/nvim/navigation.vim
+source ~/.config/nvim/autocomplete.vim
+
+" Life saver: display invisible chars
+command ShowUtf8 /[^[:print:]]
+
+" ----------------------------------------------------------------------------
+" UI Tweaks
+" ----------------------------------------------------------------------------
+
+"set fillchars+=vert:\|
+"highlight clear VertSplit
+"hi VertSplit None
+
+" Hassle free Airline
+let g:airline_theme = 'monochrome'
+" simple separators for buffer list
+let g:airline_left_alt_sep = ''
+let g:airline_right_alt_sep = ''
+" don't count trailing whitespace since it lags in huge files
+let g:airline#extensions#whitespace#enabled = 0
+" put a buffer list at the top
+let g:airline#extensions#tabline#enabled = 0
+let g:airline#extensions#tabline#fnamemod = ':t'
+
+source ~/.config/private.vim
