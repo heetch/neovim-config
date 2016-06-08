@@ -130,4 +130,7 @@ let g:airline#extensions#whitespace#enabled = 0
 let g:airline#extensions#tabline#enabled = 0
 let g:airline#extensions#tabline#fnamemod = ':t'
 
-source ~/.config/private.vim
+" Store your personal settings there (colors, etc)
+if !empty(glob("~/.config/nvim/private.vim"))
+  source ~/.config/nvim/private.vim
+endif
