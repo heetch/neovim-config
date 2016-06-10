@@ -105,6 +105,7 @@ source ~/.config/nvim/make.vim
 source ~/.config/nvim/python.vim
 source ~/.config/nvim/go.vim
 
+source ~/.config/nvim/ui.vim
 source ~/.config/nvim/navigation.vim
 source ~/.config/nvim/autocomplete.vim
 
