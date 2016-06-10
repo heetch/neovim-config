@@ -2,8 +2,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Utils
 Plug 'tpope/vim-fugitive'
-" TODO: fix it
-Plug 'tpope/vim-commentary', { 'on': '<Plug>Commentary' }
+Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'gregsexton/gitv'
 Plug 'junegunn/goyo.vim'
