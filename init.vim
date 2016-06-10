@@ -18,7 +18,7 @@ set hidden
 set mouse=a
 
 " Tab character settings
-set wrap
+set linebreak
 set scrolloff=3
 set tabstop=2
 set shiftwidth=2
@@ -62,8 +62,8 @@ set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
 set wildignore+=*.swp,.lock,.DS_Store,._*
 
 " Remember last location in file
-au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
-      \| exe "normal g'\"" | endif
+"au BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$")
+"      \| exe "normal g'\"" | endif
 
 
 " Define backup directory
@@ -99,7 +99,6 @@ autocmd FileAppendPre   * :call TrimWhiteSpace()
 autocmd FilterWritePre  * :call TrimWhiteSpace()
 autocmd BufWritePre     * :call TrimWhiteSpace()
 
-
 source ~/.config/nvim/ruby.vim
 source ~/.config/nvim/make.vim
 source ~/.config/nvim/python.vim
@@ -111,25 +110,6 @@ source ~/.config/nvim/autocomplete.vim
 
 " Life saver: display invisible chars
 command ShowUtf8 /[^[:print:]]
-
-" ----------------------------------------------------------------------------
-" UI Tweaks
-" ----------------------------------------------------------------------------
-
-"set fillchars+=vert:\|
-"highlight clear VertSplit
-"hi VertSplit None
-
-" Hassle free Airline
-let g:airline_theme = 'monochrome'
-" simple separators for buffer list
-let g:airline_left_alt_sep = ''
-let g:airline_right_alt_sep = ''
-" don't count trailing whitespace since it lags in huge files
-let g:airline#extensions#whitespace#enabled = 0
-" put a buffer list at the top
-let g:airline#extensions#tabline#enabled = 0
-let g:airline#extensions#tabline#fnamemod = ':t'
 
 " Store your personal settings there (colors, etc)
 if !empty(glob("~/.config/nvim/private.vim"))

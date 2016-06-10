@@ -21,8 +21,8 @@ Plug 'jceb/vim-orgmode'
 " UI
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'    }
 Plug 'majutsushi/tagbar'
-Plug 'bling/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Plug 'bling/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
 
 " Languages
 
