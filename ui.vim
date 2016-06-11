@@ -1,5 +1,7 @@
+syntax sync minlines=256
+set synmaxcol=300
+set re=1
 set lazyredraw
-set ttyfast
 
 " Disable git gutter by default
 let g:gitgutter_enabled = 0
@@ -104,4 +106,7 @@ function StatusUpdate()
     endfor
 endfunction
 
-autocmd VimEnter,WinEnter,BufWinEnter,BufUnload * call StatusUpdate()
+augroup status-update
+  autocmd!
+  autocmd VimEnter,WinEnter,BufWinEnter,BufUnload * call StatusUpdate()
+augroup END

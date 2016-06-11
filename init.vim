@@ -87,6 +87,20 @@ let mapleader="\<SPACE>"
 nnoremap <Space> <nop>
 
 " ----------------------------------------------------------------------------
+" Remember cursor position
+" ----------------------------------------------------------------------------
+augroup vimrc-remember-cursor-position
+  autocmd!
+  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+augroup END
+
+" ----------------------------------------------------------------------------
+" Fix regexpes http://stevelosh.com/blog/2010/09/coming-home-to-vim/
+" ----------------------------------------------------------------------------
+nnoremap / /\v
+vnoremap / /\v
+
+" ----------------------------------------------------------------------------
 " Removes trailing spaces Leader
 " ----------------------------------------------------------------------------
 
@@ -94,16 +108,20 @@ function! TrimWhiteSpace()
     %s/\s\+$//e
 endfunction
 
-autocmd FileWritePre    * :call TrimWhiteSpace()
-autocmd FileAppendPre   * :call TrimWhiteSpace()
-autocmd FilterWritePre  * :call TrimWhiteSpace()
-autocmd BufWritePre     * :call TrimWhiteSpace()
+augroup trim-white-spaces
+  autocmd!
+  autocmd FileWritePre    * :call TrimWhiteSpace()
+  autocmd FileAppendPre   * :call TrimWhiteSpace()
+  autocmd FilterWritePre  * :call TrimWhiteSpace()
+  autocmd BufWritePre     * :call TrimWhiteSpace()
+augroup END
 
 source ~/.config/nvim/ruby.vim
 source ~/.config/nvim/make.vim
 source ~/.config/nvim/python.vim
 source ~/.config/nvim/go.vim
 
+source ~/.config/nvim/git.vim
 source ~/.config/nvim/ui.vim
 source ~/.config/nvim/navigation.vim
 source ~/.config/nvim/autocomplete.vim
