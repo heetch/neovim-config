@@ -14,7 +14,7 @@ augroup FileType go
   au!
   au FileType go nmap <leader>mr <Plug>(go-run)
   au FileType go nmap <leader>mc <Plug>(go-build)
-  au FileType go nmap <leader>mq <Plug>(go-test)
+  au FileType go nmap <leader>mt <Plug>(go-test)
   au FileType go nmap <leader>mo <Plug>(go-coverage)
   au FileType go nmap <Leader>mds <Plug>(go-def-split)
   au FileType go nmap <Leader>mdv <Plug>(go-def-vertical)
