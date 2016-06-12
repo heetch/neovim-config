@@ -30,10 +30,10 @@ nmap <Leader>%y :!echo % \| pbcopy<CR>
 map //  :nohlsearch<CR>; echo 'Search highlight cleared' <CR>
 
 " Fix Quickfix showing in the tagbar
-augroup tagbar-quickfix
-  autocmd!
-  autocmd FileType qf wincmd J
-augroup END
+"augroup tagbar-quickfix
+"  autocmd!
+"  autocmd FileType qf wincmd J
+" augroup END
 
 
 " Focused reader
