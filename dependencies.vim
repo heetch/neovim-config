@@ -19,6 +19,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'jceb/vim-orgmode'
 
 " UI
+Plug 'tpope/vim-eunuch'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'    }
 Plug 'majutsushi/tagbar'
 " Plug 'bling/vim-airline'
