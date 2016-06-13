@@ -44,10 +44,10 @@ This configuration attempts to be battery included and maintain proper documenta
 
 | Function | Hotkey | Description |
 |----------|--------|-------------|
-| Focus window to the right | `SPC l` | |
-| Focus window to the left | `SPC h` | |
-| Focus window to the up | `SPC k` | |
-| Focus window to the down | `SPC j` | |
+| Focus window to the right | `SPC l` | alternative to traditonal `^w l` |
+| Focus window to the left | `SPC h` | alternative to traditonal `^w h` |
+| Focus window to the up | `SPC k` | alternative to traditonal `^w k` |
+| Focus window to the down | `SPC j` | alternative to traditonal `^w j` |
 
 ### Finding files
 
