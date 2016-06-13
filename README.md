@@ -40,6 +40,15 @@ This configuration attempts to be battery included and maintain proper documenta
 | Move to next word | `$` | Target end of the line |
 | Move to next word | `^` | Target end of the line |
 
+### Moving windows
+
+| Function | Hotkey | Description |
+|----------|--------|-------------|
+| Focus window to the right | `SPC l` | |
+| Focus window to the left | `SPC h` | |
+| Focus window to the up | `SPC k` | |
+| Focus window to the down | `SPC j` | |
+
 ### Finding files
 
 | Function | Hotkey | Description |

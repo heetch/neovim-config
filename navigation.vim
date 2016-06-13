@@ -35,6 +35,11 @@ map //  :nohlsearch<CR>; echo 'Search highlight cleared' <CR>
 "  autocmd FileType qf wincmd J
 " augroup END
 
+" Easily move around panes
+nmap <silent> <Leader><left> :wincmd h<CR>
+nmap <silent> <Leader><right> :wincmd l<CR>
+nmap <silent> <Leader><up> :wincmd k<CR>
+nmap <silent> <Leader><down> :wincmd j<CR>
 
 " Focused reader
 map <Leader>= :Goyo<CR>
