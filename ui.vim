@@ -11,6 +11,9 @@ let g:gitgutter_map_keys = 0
 
 map <Leader>ug :GitGutterToggle<CR>
 
+" Hide vertical split separator
+hi VertSplit ctermfg=8 ctermbg=8
+
 "" Statusline, source: https://gitlab.com/sshbio/dot/snippets/13567
 
 set laststatus=2
@@ -24,7 +27,7 @@ function StatusHighlight(mode, active)
         hi StatusMiddle ctermbg=233 ctermfg=240 term=none cterm=none
         hi StatusRight1 ctermbg=241 ctermfg=235 term=none cterm=none
         hi StatusRight2 ctermbg=235 ctermfg=240 term=none cterm=none
-        return '      '
+        return ' '
 
     elseif a:mode == 'n' || a:mode == 'c'
         hi StatusMode ctermbg=148 ctermfg=22 term=bold cterm=bold
@@ -32,7 +35,7 @@ function StatusHighlight(mode, active)
         hi StatusMiddle ctermbg=236 ctermfg=247 term=none cterm=none
         hi StatusRight1 ctermbg=252 ctermfg=241 term=none cterm=none
         hi StatusRight2 ctermbg=240 ctermfg=250 term=none cterm=none
-        return 'NORMAL'
+        return 'N'
 
     elseif a:mode == 'i'
         hi StatusMode ctermbg=231 ctermfg=23 term=bold cterm=bold
@@ -40,7 +43,7 @@ function StatusHighlight(mode, active)
         hi StatusMiddle ctermbg=24 ctermfg=117 term=none cterm=none
         hi StatusRight1 ctermbg=117 ctermfg=23 term=none cterm=none
         hi StatusRight2 ctermbg=31 ctermfg=117 term=none cterm=none
-        return 'INSERT'
+        return 'I'
 
     elseif a:mode == 'R' || a:mode == 't'
         hi StatusMode ctermbg=160 ctermfg=231 term=bold cterm=bold
@@ -48,7 +51,7 @@ function StatusHighlight(mode, active)
         hi StatusMiddle ctermbg=236 ctermfg=247 term=none cterm=none
         hi StatusRight1 ctermbg=252 ctermfg=241 term=none cterm=none
         hi StatusRight2 ctermbg=240 ctermfg=250 term=none cterm=none
-        return a:mode == 'R' ? 'REPLACE' : 'TERMINAL'
+        return a:mode == 'R' ? 'R' : 'T'
 
     elseif a:mode == 'v' || a:mode == 'V' || a:mode == ''
         hi StatusMode ctermbg=208 ctermfg=88 term=bold cterm=bold
@@ -56,7 +59,7 @@ function StatusHighlight(mode, active)
         hi StatusMiddle ctermbg=236 ctermfg=247 term=none cterm=none
         hi StatusRight1 ctermbg=252 ctermfg=241 term=none cterm=none
         hi StatusRight2 ctermbg=240 ctermfg=250 term=none cterm=none
-        return a:mode == 'v' ? 'VISUAL' : a:mode == 'V' ? 'V-LINE' : 'V-BLOCK'
+        return a:mode == 'v' ? 'V' : a:mode == 'V' ? 'V' : 'V'
 
     else
         return a:mode
