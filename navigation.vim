@@ -15,6 +15,9 @@ vmap > >gv
 vnoremap <leader>y "+y
 nnoremap <leader>p "+p
 
+" Save
+map <Leader>w :w<CR>
+
 " Open tabs
 map <C-w>t :tabnew<CR>
 
