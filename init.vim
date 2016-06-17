@@ -16,6 +16,7 @@ set ruler
 set encoding=utf-8
 set hidden
 set mouse=a
+set colorcolumn=120
 
 " Tab character settings
 set linebreak
