@@ -65,6 +65,14 @@ This configuration attempts to be battery included and maintain proper documenta
 | Alternate file | `SPC TAB` | Alternate with previously opened buffer in that pane (similar to `CTRL ^` |
 | Fuzzy find buffers | `SPC ENTER` | Fuzzy find through opened buffers |
 
+### Snippets
+
+| Function | Hotkey | Description |
+|----------|--------|-------------|
+| Show available Snippets | | Autocompleted automatically |
+| Trigger Snippet expansion | `Ctrl k` | |
+| Next expansion step | `Ctrl k` | |
+
 ### Language specifics
 
 #### Go
