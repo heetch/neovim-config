@@ -4,7 +4,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
-Plug 'gregsexton/gitv'
+Plug 'junegunn/gv.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'airblade/vim-gitgutter'
 "Plug 'tmux-plugins/vim-tmux' | Plug 'tmux-plugins/vim-tmux-focus-events'
