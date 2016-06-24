@@ -9,6 +9,7 @@ let g:gitgutter_realtime = 0
 let g:gitgutter_eager = 0
 let g:gitgutter_map_keys = 0
 
+
 map <Leader>ug :GitGutterToggle<CR>
 
 " Hide vertical split separator
@@ -66,6 +67,44 @@ function StatusHighlight(mode, active)
     endif
 endfunction
 
+" Pairing status
+let s:pairing_first = 0
+let s:pairing_second = 0
+
+function ToggleFirst()
+  if s:pairing_first == 0
+    let s:pairing_first = 1
+  else
+    let s:pairing_first = 0
+  endif
+endfunction
+
+function ToggleSecond()
+  if s:pairing_second == 0
+    let s:pairing_second = 1
+  else
+    let s:pairing_second = 0
+  endif
+endfunction
+
+map <silent> <F11> :call ToggleFirst()<CR>
+map <silent> <F12> :call ToggleSecond()<CR>
+
+function PairingStatus()
+  let status = ''
+
+  if s:pairing_first == 1
+    let status .= ' JHC '
+  endif
+
+  if s:pairing_second == 1
+    let status .= ' FLO '
+  endif
+
+  return status
+endfunction
+
+
 function StatusGit()
     let symbols = ['+', '~', '-']
     let hunks = GitGutterGetHunkSummary()
@@ -92,12 +131,15 @@ function Status(active)
         let status .= ' %{StatusGit()}'
     endif
 
+    let status .= ' %#ErrorMsg#%{PairingStatus()}%*'
+
     if &filetype != 'netrw' && &filetype != 'undotree'
         let status .= '%=' .' %{&fileencoding} | %{&fileformat} '
                     \  .'%#StatusRight2# %{&filetype} '
                     \  .'%#StatusRight1# %p%% %l:%c '
                     \  .'%#StatusWarning%{SyntasticStatuslineFlag()}'
     endif
+
 
     return status
 endfunction

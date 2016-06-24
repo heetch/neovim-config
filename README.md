@@ -16,6 +16,13 @@ This configuration attempts to be battery included and maintain proper documenta
 
 ## Cheatsheet
 
+### Pair Programming
+
+| Function | Hotkey | Description |
+|----------|--------|-------------|
+| Show intent to type | `F11` | Show a red notification in status bar telling that the first coder wants to type|
+| Show intent to type | `F12` | Show a red notification in status bar telling that the second coder wants to type|
+
 ### Inserting and selecting
 
 | Function | Hotkey | Description |
