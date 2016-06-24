@@ -89,6 +89,10 @@ endfunction
 
 map <silent> <F11> :call ToggleFirst()<CR>
 map <silent> <F12> :call ToggleSecond()<CR>
+imap <silent> <F11> <ESC>:call ToggleFirst()<CR>i
+imap <silent> <F12> <ESC>:call ToggleSecond()<CR>i
+vmap <silent> <F11> :call ToggleFirst()<CR>
+vmap <silent> <F12> :call ToggleSecond()<CR>
 
 function PairingStatus()
   let status = ''
