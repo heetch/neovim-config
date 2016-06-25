@@ -64,6 +64,7 @@ This configuration attempts to be battery included and maintain proper documenta
 | Open a file relatively to current buffer | `SPC e` | |
 | Fuzzy find a file in current project | `SPC f` | |
 | Find in project | `SPC F` | Find occurences of query in every files |
+| Find tags in project | `SPC t` | |
 
 ### Finding Buffers
 

@@ -53,8 +53,11 @@ map <silent> <Leader>f :FZF<CR>
 " Find in project
 map <silent> <Leader>F :Ag<CR>
 
-" Fuzzy find buffers
-map <silent> <Leader><CR> :Buffers<CR>
+" Fuzzy find current file tags
+map <silent> <Leader>t :BTags<CR>
+
+" Fuzzy find tags
+map <silent> <Leader>t :Tags<CR>
 
 " Fuzzy find marks
 map <silent> <Leader>m :Marks<CR>

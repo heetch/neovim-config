@@ -10,8 +10,13 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
 
+
+
 augroup FileType go
   au!
+
+  let g:fzf_tags_command = 'gotags -R . > tags'
+
   au FileType go nmap <leader>mr <Plug>(go-run)
   au FileType go nmap <leader>mc <Plug>(go-build)
   au FileType go nmap <leader>mt <Plug>(go-test)
