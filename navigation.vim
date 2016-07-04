@@ -47,6 +47,9 @@ nmap <silent> <Leader><down> :wincmd j<CR>
 " Focused reader
 map <Leader>= :Goyo<CR>
 
+" Fuzzy find buffers
+map <silent> <Leader><CR> :Buffers<CR>
+
 " Fuzzy finder
 map <silent> <Leader>f :FZF<CR>
 
