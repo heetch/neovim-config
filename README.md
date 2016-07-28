@@ -88,14 +88,13 @@ This configuration attempts to be battery included and maintain proper documenta
 | Function | Hotkey | Description |
 |----------|--------|-------------|
 | Show project drawer | `SPC _` | Toggle tags bar |
-| Run buffer | `SPC mr` | |
-| Compile | `SPC mc` | |
-| Run test | `SPC mt` | |
-| Show coverage | `SPC mo` | |
-| Go to definition | `SPC md#` | Where `#` can be `s` for a split, `v` for a vertical split, `t` for a tab |
-| Go to doc | `SPC mgd` | `SPC mgs` and `SPC mgv` for split or vertical split|
-| Go to doc in browser | `SPC mgb` | |
-| Show interface implementations | `SPC ms` | of word under the curor |
-| Show signature | `SPC mi` | of word under the curor |
-
+| Run buffer | `SPC SPC r` | |
+| Compile | `SPC SPC c` | |
+| Run test | `SPC SPC t` | |
+| Show coverage | `SPC SPC o` | |
+| Go to definition | `SPC SPC d#` | Where `#` can be `s` for a split, `v` for a vertical split, `t` for a tab |
+| Go to doc | `SPC SPC gd` | `SPC SPC gs` and `SPC SPC gv` for split or vertical split|
+| Go to doc in browser | `SPC SPC gb` | |
+| Show interface implementations | `SPC SPC s` | of word under the curor |
+| Show signature | `SPC SPC i` | of word under the curor |
 
