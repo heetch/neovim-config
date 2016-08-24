@@ -10,7 +10,8 @@ let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 let g:go_fmt_command = "goimports"
 let g:go_metalinter_autosave = 1
-
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck', 'deadcode']
+let g:go_metalinter_autosave_enabled = ['vet', 'golint']
 
 augroup FileType go
   au!
@@ -21,6 +22,7 @@ augroup FileType go
   au FileType go nmap <leader><leader>c <Plug>(go-build)
   au FileType go nmap <leader><leader>t <Plug>(go-test)
   au FileType go nmap <leader><leader>o <Plug>(go-coverage)
+  au FileType go nmap <leader><leader>l <Plug>(go-metalinter)
   au FileType go nmap <Leader><leader>ds <Plug>(go-def-split)
   au FileType go nmap <Leader><leader>dv <Plug>(go-def-vertical)
   au FileType go nmap <Leader><leader>dt <Plug>(go-def-tab)

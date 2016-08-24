@@ -92,6 +92,7 @@ This configuration attempts to be battery included and maintain proper documenta
 | Compile | `SPC SPC c` | |
 | Run test | `SPC SPC t` | |
 | Show coverage | `SPC SPC o` | |
+| Run linters | `SPC SPC l` | |
 | Go to definition | `SPC SPC d#` | Where `#` can be `s` for a split, `v` for a vertical split, `t` for a tab |
 | Go to doc | `SPC SPC gd` | `SPC SPC gs` and `SPC SPC gv` for split or vertical split|
 | Go to doc in browser | `SPC SPC gb` | |
