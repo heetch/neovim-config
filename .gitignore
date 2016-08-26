@@ -1,2 +1,6 @@
 plugged/*
 private.vim
+bundle
+spell
+autoload
+.netrwhist
