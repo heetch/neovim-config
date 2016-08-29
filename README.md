@@ -12,7 +12,20 @@ This configuration attempts to be battery included and maintain proper documenta
 
 ## Installation
 
-`git clone git://github.com/heetch/neovim-config .config/nvim`
+- Install neovim (available in Homebrew)
+- `git clone git://github.com/heetch/neovim-config .config/nvim`
+- `pip3 install neovim` (required by (deoplete.nvim) which powers autocompletion [https://github.com/Shougo/deoplete.nvim])
+- `nvim`
+- Type `:PlugInstall` to install all the required plugins.
+
+Only thing left to do is to configure your theme. Just fireup neovim and press `SPC 0` which will then
+display a list of pre-installed theme that can be selected from.
+
+Once an enjoyable one is found:
+
+- `cp ~/.config/nvim/private.vim.example ~/.config/nvim/private.vim`
+- `nvim ~/.config/nvim/private.vim`
+- Look for `colorscheme jellybeans` and replace it with the new one.
 
 ## Cheatsheet
 

@@ -1,0 +1,7 @@
+" Can be either dark or light. Use light if you're using a white or gray
+" background, otherwise use dark.
+set background=dark
+colorscheme solarized
+
+" Feel free to add here any configuration setting that you like. This file is ignored by git
+" and won't be overriden by any updates to neovim-config.
