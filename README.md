@@ -13,7 +13,7 @@ This configuration attempts to be battery included and maintain proper documenta
 ## Installation
 
 - Install neovim (available in Homebrew)
-- `git clone git://github.com/heetch/neovim-config .config/nvim`
+- `git clone git://github.com/heetch/neovim-config ~/.config/nvim`
 - `pip3 install neovim` (required by (deoplete.nvim) which powers autocompletion [https://github.com/Shougo/deoplete.nvim])
 - `gem install neovim` (required by (vim-ruby)
 - `nvim`
