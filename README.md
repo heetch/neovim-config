@@ -30,6 +30,8 @@ Once an enjoyable one is found:
 
 ## Cheatsheet
 
+Press `SPC ?` to display this cheatsheet.
+
 ### Pair Programming
 
 | Function | Hotkey | Description |

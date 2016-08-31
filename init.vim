@@ -130,6 +130,7 @@ source ~/.config/nvim/autocomplete.vim
 " Life saver: display invisible chars
 command ShowUtf8 /[^[:print:]]
 
+command Cheat :term! less +31 ~/.config/nvim/README.md
 " Store your personal settings there (colors, etc)
 if !empty(glob("~/.config/nvim/private.vim"))
   source ~/.config/nvim/private.vim

@@ -18,6 +18,9 @@ nnoremap <leader>p "+p
 " Save
 map <Leader>w :w<CR>
 
+" Show Cheatsheet
+map <Leader>? :Cheat<CR>
+
 " Open tabs
 map <C-w>t :tabnew<CR>
 
