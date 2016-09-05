@@ -32,13 +32,6 @@ Once an enjoyable one is found:
 
 Press `SPC ?` to display this cheatsheet.
 
-### Pair Programming
-
-| Function | Hotkey | Description |
-|----------|--------|-------------|
-| Show intent to type | `F11` | Show a red notification in status bar telling that the first coder wants to type|
-| Show intent to type | `F12` | Show a red notification in status bar telling that the second coder wants to type|
-
 ### Inserting and selecting
 
 | Function | Hotkey | Description |
@@ -67,10 +60,10 @@ Press `SPC ?` to display this cheatsheet.
 
 | Function | Hotkey | Description |
 |----------|--------|-------------|
-| Focus window to the right | `SPC l` | alternative to traditonal `^w l` |
-| Focus window to the left | `SPC h` | alternative to traditonal `^w h` |
-| Focus window to the up | `SPC k` | alternative to traditonal `^w k` |
-| Focus window to the down | `SPC j` | alternative to traditonal `^w j` |
+| Focus window to the right | `SPC l` | alternative to traditonal `^w l`, arrow flavor is available |
+| Focus window to the left | `SPC h` | alternative to traditonal `^w h`, arrow flavor is available |
+| Focus window to the up | `SPC k` | alternative to traditonal `^w k`, arrow flavor is available |
+| Focus window to the down | `SPC j` | alternative to traditonal `^w j`, arrow flavor is available |
 
 ### Finding files
 
@@ -88,6 +81,22 @@ Press `SPC ?` to display this cheatsheet.
 |----------|--------|-------------|
 | Alternate file | `SPC TAB` | Alternate with previously opened buffer in that pane (similar to `CTRL ^` |
 | Fuzzy find buffers | `SPC ENTER` | Fuzzy find through opened buffers |
+| Kill current buffer | `SPC x` | equivalent to `:bd` |
+
+### Misc
+
+| Function | Hotkey | Description |
+|----------|--------|-------------|
+| Indent buffer | `SPC =` | equivalent to `ggVG=` |
+| Enable spell checking | `SPC c` | Fuzzy find through opened buffers |
+
+### Pair Programming
+
+| Function | Hotkey | Description |
+|----------|--------|-------------|
+| Show intent to type | `F11` | Show a red notification in status bar telling that the first coder wants to type|
+| Show intent to type | `F12` | Show a red notification in status bar telling that the second coder wants to type|
+
 
 ### Snippets
 

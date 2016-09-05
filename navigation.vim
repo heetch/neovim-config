@@ -5,7 +5,7 @@ map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 map <Leader><Tab> <c-^>
 
 " Close current buffer
-map <Leader>c :bd<CR>
+map <Leader>x :bd<CR>
 
 " Vmap for maintain Visual Mode after shifting > and <
 vmap < <gv
@@ -15,11 +15,17 @@ vmap > >gv
 vnoremap <leader>y "+y
 nnoremap <leader>p "+p
 
+" Toggle spellcheck
+map <Leader>c :set spell!<CR>
+
 " Save
 map <Leader>w :w<CR>
 
 " Show Cheatsheet
 map <Leader>? :Cheat<CR>
+
+" Indent the whole buffer
+map <Leader>= ggVG=<CR>
 
 " Open tabs
 map <C-w>t :tabnew<CR>
@@ -30,7 +36,7 @@ map <Leader>_ :TagbarToggle<CR>
 nmap <Leader>- :NERDTreeToggle<CR>
 
 " Copy current buffer absolute path to system clipboard
-nmap <Leader>%y :!echo % \| pbcopy<CR>
+nmap <silent><Leader>%y :!echo % \| pbcopy<CR>
 
 " Clean search
 map //  :nohlsearch<CR>; echo 'Search highlight cleared' <CR>
