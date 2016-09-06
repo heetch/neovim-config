@@ -12,7 +12,8 @@ This configuration attempts to be battery included and maintain proper documenta
 
 ## Installation
 
-- Install neovim (available in Homebrew)
+- Install [neovim](https://github.com/neovim/neovim) (available in Homebrew)
+- Install [ag](https://github.com/ggreer/the_silver_searcher) (available in Homebrew)
 - `git clone git://github.com/heetch/neovim-config ~/.config/nvim`
 - `pip3 install neovim` (required by (deoplete.nvim) which powers autocompletion [https://github.com/Shougo/deoplete.nvim])
 - `gem install neovim` (required by (vim-ruby)
@@ -27,6 +28,10 @@ Once an enjoyable one is found:
 - `cp ~/.config/nvim/private.vim.example ~/.config/nvim/private.vim`
 - `nvim ~/.config/nvim/private.vim`
 - Look for `colorscheme jellybeans` and replace it with the new one.
+
+### Optional steps
+
+- Set `export FZF_DEFAULT_COMMAND='ag -g ""'` in your shell profile to speed up file finder
 
 ## Cheatsheet
 
