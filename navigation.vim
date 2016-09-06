@@ -60,6 +60,9 @@ map <Leader>= :Goyo<CR>
 map <silent> <Leader><CR> :Buffers<CR>
 
 " Fuzzy finder
+if executable("ag") " when installed, use 'ag -g' as the default fzf command
+  let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+endif
 map <silent> <Leader>f :FZF<CR>
 
 " Find in project

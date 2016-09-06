@@ -29,10 +29,6 @@ Once an enjoyable one is found:
 - `nvim ~/.config/nvim/private.vim`
 - Look for `colorscheme jellybeans` and replace it with the new one.
 
-### Optional steps
-
-- Set `export FZF_DEFAULT_COMMAND='ag -g ""'` in your shell profile to speed up file finder
-
 ## Cheatsheet
 
 Press `SPC ?` to display this cheatsheet.
@@ -76,7 +72,7 @@ Press `SPC ?` to display this cheatsheet.
 |----------|--------|-------------|
 | Show project drawer | `SPC -` | Toggle project drawer |
 | Open a file relatively to current buffer | `SPC e` | |
-| Fuzzy find a file in current project | `SPC f` | |
+| Fuzzy find a file in current project | `SPC f` | When [`ag`](https://github.com/ggreer/the_silver_searcher) is installed on your machine, only lists files not ignored by `.gitignore`, `.hgignore` and `.agignore` |
 | Find in project | `SPC F` | Find occurences of query in every files |
 | Find tags in project | `SPC t` | |
 
