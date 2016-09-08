@@ -32,8 +32,18 @@ map <C-w>t :tabnew<CR>
 
 " Open tags
 map <Leader>_ :TagbarToggle<CR>
+
+" NERDTree config
+
 " Display file tree
 nmap <Leader>- :NERDTreeToggle<CR>
+
+" Better UI
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+" Don't ask to delete a buffer once deleted in NERDTree
+let NERDTreeAutoDeleteBuffer = 1
+
 
 " Copy current buffer absolute path to system clipboard
 nmap <silent><Leader>%y :!echo % \| pbcopy<CR>

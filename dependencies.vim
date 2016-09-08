@@ -23,6 +23,7 @@ Plug 'jceb/vim-orgmode'
 " UI
 Plug 'tpope/vim-eunuch'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'    }
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'majutsushi/tagbar'
 " Plug 'bling/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
