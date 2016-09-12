@@ -5,7 +5,7 @@ map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 map <Leader><Tab> <c-^>
 
 " Close current buffer
-map <Leader>x :bd<CR>
+map <Leader>x :bw<CR>
 
 " Vmap for maintain Visual Mode after shifting > and <
 vmap < <gv
