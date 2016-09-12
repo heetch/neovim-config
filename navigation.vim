@@ -49,7 +49,7 @@ let NERDTreeAutoDeleteBuffer = 1
 nmap <silent><Leader>%y :!echo % \| pbcopy<CR>
 
 " Clean search
-map //  :nohlsearch<CR>; echo 'Search highlight cleared' <CR>
+map //  :nohlsearch<CR>:echo 'Search highlight cleared'<CR>
 
 " Fix Quickfix showing in the tagbar
 "augroup tagbar-quickfix
