@@ -121,6 +121,7 @@ source ~/.config/nvim/ruby.vim
 source ~/.config/nvim/make.vim
 source ~/.config/nvim/python.vim
 source ~/.config/nvim/go.vim
+source ~/.config/nvim/elixir.vim
 
 source ~/.config/nvim/git.vim
 source ~/.config/nvim/ui.vim
@@ -131,6 +132,7 @@ source ~/.config/nvim/autocomplete.vim
 command ShowUtf8 /[^[:print:]]
 
 command Cheat :term! less +31 ~/.config/nvim/README.md
+
 " Store your personal settings there (colors, etc)
 if !empty(glob("~/.config/nvim/private.vim"))
   source ~/.config/nvim/private.vim

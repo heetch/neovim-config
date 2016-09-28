@@ -25,6 +25,7 @@ Plug 'tpope/vim-eunuch'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle'    }
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'majutsushi/tagbar'
+Plug 'powerman/vim-plugin-AnsiEsc'
 " Plug 'bling/vim-airline'
 " Plug 'vim-airline/vim-airline-themes'
 
@@ -40,7 +41,8 @@ Plug 'majutsushi/tagbar'
 
 "" Elixir
 Plug 'elixir-lang/vim-elixir'
-Plug 'archSeer/elixir.nvim'
+Plug 'thinca/vim-ref'
+Plug 'slashmili/alchemist.vim'
 
 "" Go
 Plug 'zchee/deoplete-go', { 'do': 'make'}
