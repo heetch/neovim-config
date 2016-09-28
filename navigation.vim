@@ -63,6 +63,11 @@ nmap <silent> <Leader><right> :wincmd l<CR>
 nmap <silent> <Leader><up> :wincmd k<CR>
 nmap <silent> <Leader><down> :wincmd j<CR>
 
+nmap <silent> <Leader>h :wincmd h<CR>
+nmap <silent> <Leader>l :wincmd l<CR>
+nmap <silent> <Leader>k :wincmd k<CR>
+nmap <silent> <Leader>j :wincmd j<CR>
+
 " Focused reader
 map <Leader>+ :Goyo<CR>
 
