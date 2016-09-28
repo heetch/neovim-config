@@ -84,5 +84,6 @@ Plug 'AlessandroYorba/Sierra'
 Plug 'mhartington/oceanic-next'
 Plug 'joshdick/onedark.vim'
 Plug 'kristijanhusak/vim-hybrid-material'
+Plug 'cbracken/vim-monochrome'
 
 call plug#end()
