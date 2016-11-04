@@ -98,3 +98,6 @@ map <silent> <Leader>0 :Colors<CR>
 " Complete whole filenames/lines with a quicker shortcut key in insert mode
 inoremap <C-f> <C-x><C-f>
 inoremap <C-l> <C-x><C-l>
+
+" Stop concealing characters when going into navigation and edition mode
+set concealcursor=nc
