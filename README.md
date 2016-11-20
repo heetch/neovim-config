@@ -29,6 +29,10 @@ Once an enjoyable one is found:
 - `nvim ~/.config/nvim/private.vim`
 - Look for `colorscheme jellybeans` and replace it with the new one.
 
+_Optionnal_:
+
+- For design of Infra as code, you could add HCL linter by runnig `go get github.com/fatih/hclfmt`
+
 ## Cheatsheet
 
 Press `SPC ?` to display this cheatsheet.
