@@ -68,6 +68,9 @@ Plug 'tpope/vim-markdown'
 Plug 'groenewege/vim-less'
 "Plug 'slim-template/vim-slim'
 
+"" Infra as code
+Plug 'fatih/vim-hclfmt', { 'do': 'go get github.com/fatih/hclfmt' }
+
 " Colors
 Plug 'altercation/vim-colors-solarized'
 Plug 'sjl/badwolf'

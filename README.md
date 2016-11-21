@@ -12,6 +12,7 @@ This configuration attempts to be battery included and maintain proper documenta
 
 ## Installation
 
+- Have Go, Python and Ruby installed.
 - Install [neovim](https://github.com/neovim/neovim) (available in Homebrew)
 - Install [ag](https://github.com/ggreer/the_silver_searcher) (available in Homebrew)
 - `git clone git://github.com/heetch/neovim-config ~/.config/nvim`
