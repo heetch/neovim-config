@@ -12,6 +12,7 @@ This configuration attempts to be battery included and maintain proper documenta
 
 ## Installation
 
+- Have Go, Python and Ruby installed.
 - Install [neovim](https://github.com/neovim/neovim) (available in Homebrew)
 - Install [ag](https://github.com/ggreer/the_silver_searcher) (available in Homebrew)
 - `git clone git://github.com/heetch/neovim-config ~/.config/nvim`
@@ -28,10 +29,6 @@ Once an enjoyable one is found:
 - `cp ~/.config/nvim/private.vim.example ~/.config/nvim/private.vim`
 - `nvim ~/.config/nvim/private.vim`
 - Look for `colorscheme jellybeans` and replace it with the new one.
-
-_Optionnal_:
-
-- For design of Infra as code, you could add HCL linter by runnig `go get github.com/fatih/hclfmt`
 
 ## Cheatsheet
 
