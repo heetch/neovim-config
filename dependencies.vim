@@ -18,7 +18,7 @@ Plug 'Shougo/neosnippet'
 Plug 'Shougo/neosnippet-snippets'
 
 " Misc
-Plug 'jceb/vim-orgmode'
+Plug 'vimwiki/vimwiki'
 
 " UI
 Plug 'tpope/vim-eunuch'

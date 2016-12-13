@@ -90,6 +90,7 @@ Press `SPC ?` to display this cheatsheet.
 |----------|--------|-------------|
 | Indent buffer | `SPC =` | equivalent to `ggVG=` |
 | Enable spell checking | `SPC c` | Fuzzy find through opened buffers |
+| Open VimWiki  | `SPC Wt` | Open VimWiki in a new Tab. SPC W is the prefix for every other vim wiki commands |
 
 ### Pair Programming
 
