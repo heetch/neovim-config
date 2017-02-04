@@ -117,6 +117,7 @@ augroup trim-white-spaces
   autocmd BufWritePre     * :call TrimWhiteSpace()
 augroup END
 
+source ~/.config/nvim/qf.vim
 source ~/.config/nvim/ruby.vim
 source ~/.config/nvim/make.vim
 source ~/.config/nvim/python.vim
