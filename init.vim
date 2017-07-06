@@ -124,6 +124,7 @@ source ~/.config/nvim/python.vim
 source ~/.config/nvim/go.vim
 
 source ~/.config/nvim/git.vim
+source ~/.config/nvim/json.vim
 source ~/.config/nvim/ui.vim
 source ~/.config/nvim/navigation.vim
 source ~/.config/nvim/autocomplete.vim
