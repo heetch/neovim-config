@@ -3,7 +3,7 @@ augroup FileType json
 
   " Check if jq is present in $PATH
   if executable("jq")
-    " To indent json files on save
-    au FileType json autocmd BufWritePre <buffer> %!jq -S '.'
+    " To indent and format json files
+    au FileType json nmap <leader><leader>l :%!jq -S '.'<CR>
   endif
 augroup END
