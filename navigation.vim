@@ -101,3 +101,6 @@ inoremap <C-l> <C-x><C-l>
 
 " Stop concealing characters when going into navigation and edition mode
 set concealcursor=nc
+
+" VimWiki
+let g:vimwiki_map_prefix = '<Leader>W'
