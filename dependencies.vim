@@ -40,7 +40,7 @@ Plug 'majutsushi/tagbar'
 
 "" Elixir
 Plug 'elixir-lang/vim-elixir'
-Plug 'archSeer/elixir.nvim'
+Plug 'slashmili/alchemist.vim'
 
 "" Go
 Plug 'zchee/deoplete-go', { 'do': 'make'}
