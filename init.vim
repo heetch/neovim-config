@@ -122,6 +122,8 @@ source ~/.config/nvim/ruby.vim
 source ~/.config/nvim/make.vim
 source ~/.config/nvim/python.vim
 source ~/.config/nvim/go.vim
+source ~/.config/nvim/swift.vim
+source ~/.config/nvim/objc.vim
 
 source ~/.config/nvim/git.vim
 source ~/.config/nvim/json.vim
